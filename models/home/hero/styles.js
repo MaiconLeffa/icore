@@ -32,6 +32,7 @@ export const Title = styled.h1`
 export const Description = styled.h2`
   color: #fff;
   font-size: 24px;
+  font-weight: normal;
   
   @media(max-width: ${themes.breakpoints.mobile}){
     font-size: 18px;
