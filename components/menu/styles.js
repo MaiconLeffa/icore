@@ -6,5 +6,5 @@ export const Header = styled.header`
   justify-content: center;
   padding: 24px 0;
   width: 100%;
-  box-shadow: 0px 0px 50px rgba(0, 193, 222,0.2);
+  box-shadow: 0px 0px 50px rgba(0, 193, 222);
 `
