@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { themes } from "styles/themes";
 
 export const Container = styled.section`
-  padding: 200px 0;
+  padding-bottom: 180px;
 `
 export const Title = styled.h2`
   color: ${themes.colors.brand};
