@@ -29,7 +29,7 @@ export const Title = styled.h1`
     text-align: center;
   }
 `
-export const Description = styled.h2`
+export const Description = styled.p`
   color: #fff;
   font-size: 24px;
   font-weight: normal;
