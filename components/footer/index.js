@@ -1,18 +1,29 @@
 import Image from "next/image"
 import { themes } from "styles/themes"
+import { Container, Rights, Wrapper } from "./styles"
+import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
 
 const Footer = () =>
-  <footer style={{ boxShadow: '0px 0px 50px rgba(0, 193, 222,0.2)' }}>
+  <Container>
 
-    <div style={{ padding: '0 24px', height: 500, maxWidth: 1200, margin: '0 auto', alignItems: 'center', display: 'flex' }}>
+    <Wrapper>
 
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Image alt='iCore' width={206} height={54} src='/logo.svg' />
-        <p style={{ color: '#fff', marginTop: 'auto' }}>© 2023 iCore Todos os direitos reservados.</p>
+
+        <div style={{ marginTop: 24, display: 'flex', justifyContent: 'center', gap: 24 }}>
+          <BsFacebook size={26} fill="#fff" />
+          <BsInstagram size={26} fill="#fff" />
+          <BsWhatsapp size={26} fill="#fff" />
+        </div>
+
       </div>
 
-
       <div style={{ marginLeft: 'auto' }}>
+
+
+
+
         <strong style={{ color: '#fff' }}>MATRIZ</strong>
         <p style={{ color: '#fff' }}>R. Manoel Lima Pôrto, 15 - Sala 03 - Torres, RS, 95560-000</p>
 
@@ -21,10 +32,10 @@ const Footer = () =>
 
       </div>
 
-    </div>
+    </Wrapper>
 
-
+    <Rights>© 2023 iCore Todos os direitos reservados.</Rights>
     <div style={{ height: 14, backgroundColor: themes.colors.brand, width: '100%' }}></div>
-  </footer>
+  </Container>
 
 export default Footer
