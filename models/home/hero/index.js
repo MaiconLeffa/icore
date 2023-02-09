@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useRef } from "react"
 import ReactElasticCarousel from "react-elastic-carousel"
-import { Container, Description, Emphasis, Title, TitleWrapper, Wrapper } from "./styles"
+import { CarroselContainer, Container, Description, Emphasis, Title, TitleWrapper, Wrapper } from "./styles"
 
 const Slide2 = () =>
   <Container>
@@ -41,12 +41,17 @@ const Hero = () => {
     }
   }
 
+  const breakPoints = [
+    { showArrows: false, width: 1 },
+    { width: 768 }
+  ]
+
   return (
-    <section style={{ padding: 24 }}>
-      <ReactElasticCarousel ref={carouselRef} enableAutoPlay autoPlaySpeed={timer} pagination={false} onNextEnd={onNextEnd}>
+    <CarroselContainer>
+      <ReactElasticCarousel breakPoints={breakPoints} autoPlaySpeed={timer} ref={carouselRef} enableAutoPlay pagination={false} onNextEnd={onNextEnd}>
         {arr.map((Slide, index) => <Slide key={index} />)}
       </ReactElasticCarousel>
-    </section>
+    </CarroselContainer>
   )
 }
 

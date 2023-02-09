@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { themes } from "styles/themes";
 
+export const CarroselContainer = styled.div`
+  padding: 24px; 
+  
+  @media(max-width: ${themes.breakpoints.mobile}){
+    padding: 24px 8px;
+  }
+`
 export const Container = styled.section`
   display: flex;
   height: 600px;
@@ -18,12 +25,17 @@ export const Title = styled.h1`
   font-size: ${themes.sizes.lg};
 
   @media(max-width: ${themes.breakpoints.mobile}){
-    font-size: ${themes.sizes.lg_m};
+    font-size: 32px;
+    text-align: center;
   }
 `
 export const Description = styled.h2`
   color: #fff;
   font-size: 24px;
+  
+  @media(max-width: ${themes.breakpoints.mobile}){
+    font-size: 18px;
+  }
 `
 export const TitleWrapper = styled.div`
   width: 50%;
@@ -38,8 +50,8 @@ export const Wrapper = styled.div`
   height: 100%;
 
   @media(max-width: ${themes.breakpoints.mobile}){
-    width: 100%;
-    height: 500px;
+    width: 100%; 
+    height: 350px;
   }
 `
 export const Emphasis = styled.span`
