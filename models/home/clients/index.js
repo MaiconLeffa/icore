@@ -14,7 +14,7 @@ const Clients = () => {
     <Container>
       <div style={{ width: '100%' }}>
         <Title>O que dizem sobre nós?</Title>
-        <ReactElasticCarousel enableAutoPlay autoPlaySpeed={5000} breakPoints={breakPoints}>
+        <ReactElasticCarousel breakPoints={breakPoints}>
           {schema.map(item =>
             <Card key={item.id}>
               <Image alt='iCore' style={{ minWidth: 115, borderRadius: 115, objectFit: 'cover' }} width={115} height={115} src={item.image} />
