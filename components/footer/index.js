@@ -29,16 +29,11 @@ const Footer = () =>
       </div>
 
       <div style={{ marginLeft: 'auto' }}>
-
-
-
-
         <strong style={{ color: '#fff' }}>MATRIZ</strong>
         <p style={{ color: '#fff' }}>R. Manoel Lima Pôrto, 15 - Sala 03 - Torres, RS, 95560-000</p>
 
         <strong style={{ color: '#fff' }}>FILIAL</strong>
         <p style={{ color: '#fff' }}>Av. Barão do Rio Branco, 10 - Sala 03 - Torres, RS, 95560-000</p>
-
       </div>
 
     </Wrapper>

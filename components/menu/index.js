@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Header } from "./styles"
+import { Header, Logo } from "./styles"
 import { BsWhatsapp } from 'react-icons/bs';
 
 const Menu = () =>
@@ -10,7 +10,9 @@ const Menu = () =>
       />
     </Link>
     <Link href='/'>
-      <Image alt='iCore' height={70} width={200} src='/logo.svg' />
+      <Logo>
+        <Image alt='iCore' fill src='/logo.svg' />
+      </Logo>
     </Link>
   </Header>
 
