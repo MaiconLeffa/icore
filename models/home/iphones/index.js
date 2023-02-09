@@ -8,7 +8,7 @@ const Iphones = () =>
     </ImageWrapper>
     <TitleWrapper>
       <Title>Linha <Emphasis>Iphone</Emphasis></Title>
-      <Description>Modelos novos e usados de diversas gerações para todos os publicos.</Description>
+      <Description>Nas nossas lojas vocês encontram todos os modelos de iPhone, novos e seminovos, para todos os públicos.</Description>
     </TitleWrapper>
   </Container>
 
