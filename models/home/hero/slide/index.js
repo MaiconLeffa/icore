@@ -15,7 +15,7 @@ const Slide = ({ title, text, background, image }) =>
         </TitleWrapper>
 
         {image ? <Wrapper>
-          <Image draggable={false} alt="iCore" fill style={{ objectFit: 'contain' }} src={image} />
+          <Image priority laz draggable={false} alt="iCore" fill style={{ objectFit: 'contain' }} src={image} />
         </Wrapper>
           :
           <div style={{ width: '100%', aspectRatio: '16/9' }}></div>
