@@ -5,10 +5,8 @@ import { Container, Crop, Description, Emphasis, ImageWrapper, Title, TitleWrapp
 const Suport = () =>
   <Container>
     <ImageWrapper>
-      <Crop>
-        <Image alt="iCore"
-          style={{ objectFit: 'contain' }} fill src='/fix.gif' />
-      </Crop>
+      <Image alt="iCore"
+        style={{ filter: `drop-shadow(0 0 82px ${themes.colors.brand})`, objectFit: 'contain' }} fill src='/suport.png' />
     </ImageWrapper>
 
     <TitleWrapper>

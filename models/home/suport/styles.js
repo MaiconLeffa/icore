@@ -13,18 +13,6 @@ export const Container = styled.section`
     flex-direction: column;
   }
 `
-export const Crop = styled.div`
-  height: 100%;
-  aspect-ratio: 379 / 798;
-  border-radius: 43px;
-  overflow: hidden;
-  position: relative;
-  filter: drop-shadow(0 0 82px ${themes.colors.brand});
-  
-  @media(max-width: ${themes.breakpoints.mobile}){
-    border-radius: calc((48 * 100vw) / 768);
-  }
-`
 export const Title = styled.h2`
   color: #fff;
   font-size: ${themes.sizes.lg};
