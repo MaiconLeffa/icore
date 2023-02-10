@@ -7,7 +7,7 @@ const Suport = () =>
     <ImageWrapper>
       <Crop>
         <Image alt="iCore"
-          style={{ filter: `drop-shadow(0 0 82px ${themes.colors.brand})`, objectFit: 'contain' }} fill src='/fix.gif' />
+          style={{ objectFit: 'contain' }} fill src='/fix.gif' />
       </Crop>
     </ImageWrapper>
 

@@ -19,6 +19,7 @@ export const Crop = styled.div`
   border-radius: 43px;
   overflow: hidden;
   position: relative;
+  filter: drop-shadow(0 0 82px ${themes.colors.brand});
   
   @media(max-width: ${themes.breakpoints.mobile}){
     border-radius: calc((48 * 100vw) / 768);
