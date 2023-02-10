@@ -12,7 +12,7 @@ const Slide3 = () =>
     text={<>Conheça o Apple Watch mais versátil e duro na queda já criado. O Apple Watch Ultra é o relógio esportivo definitivo, com uma caixa de titânio robusta, GPS de precisão e dupla frequência, até 36 horas de bateria, conexão celular e três pulseiras especializadas feitas para atletas e para quem não vive sem adrenalina.</>}
   />
 
-const Slide2 = () =>
+const Slide1 = () =>
   <Slide
     image='/iphone14.png'
     background='url(/slide2.png)'
@@ -20,7 +20,7 @@ const Slide2 = () =>
     text={<> Aqui na < Emphasis > iCore</Emphasis > o iPhone 14 já chegou! < br ></br > Com a nova câmera grande‑angular de nível profissional e melhorias no processamento de imagem, você faz fotos ainda mais espetaculares em qualquer cenário.Prepare‑se para ver a magia acontecer em pouca luz.</>}
   />
 
-const Slide1 = () =>
+const Slide2 = () =>
   <Slide
     background='url(/exchange.jpg)'
     title={<>Pegamos o <Emphasis>seu iPhone</Emphasis>  na compra de um <Emphasis>novo!</Emphasis></>}
