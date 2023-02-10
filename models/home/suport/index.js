@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { themes } from "styles/themes"
 import { Container, Crop, Description, Emphasis, ImageWrapper, Title, TitleWrapper } from "./styles"
 
 const Suport = () =>
@@ -6,7 +7,7 @@ const Suport = () =>
     <ImageWrapper>
       <Crop>
         <Image alt="iCore"
-          style={{ objectFit: 'contain' }} fill src='/fix.gif' />
+          style={{ filter: `drop-shadow(0 0 82px ${themes.colors.brand})`, objectFit: 'contain' }} fill src='/fix.gif' />
       </Crop>
     </ImageWrapper>
 
