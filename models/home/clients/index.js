@@ -50,7 +50,7 @@ const Clients = () => {
               }
 
               <div>
-                <p style={{ marginBottom: 10, fontWeight: 'bold', margin: 0 }}>{item.name}</p>
+                <p style={{ margin: 0, marginBottom: 10, fontWeight: 'bold' }}>{item.name}</p>
                 <p style={{ margin: 0 }}>{item.about}</p>
               </div>
 
