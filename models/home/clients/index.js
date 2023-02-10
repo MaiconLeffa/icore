@@ -29,6 +29,8 @@ const Clients = () => {
         <ReactElasticCarousel breakPoints={breakPoints}>
           {schema.map(item =>
             <Card key={item.id}>
+
+
               {
                 item.image ?
                   <Image alt='iCore' draggable={false} style={{ minWidth: 80, borderRadius: 80, objectFit: 'cover' }} width={80} height={80} src={item.image} />
@@ -47,9 +49,11 @@ const Clients = () => {
                   }}>{getAbreviation(item.name)}</div>
               }
 
+              <div>
+                <p style={{ marginBottom: 10, fontWeight: 'bold', margin: 0 }}>{item.name}</p>
+                <p style={{ margin: 0 }}>{item.about}</p>
+              </div>
 
-              <p style={{ fontWeight: 'bold', margin: 0 }}>{item.name}</p>
-              <p style={{ margin: 0 }}>{item.about}</p>
             </Card>
           )}
         </ReactElasticCarousel>
