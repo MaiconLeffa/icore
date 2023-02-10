@@ -10,6 +10,18 @@ const Clients = () => {
     { width: 768, itemsToShow: 3, itemsToScroll: 1, pagination: false, itemPadding: [0, 12] }
   ]
 
+
+
+  function getAbreviation(string) {
+    var names = string.split(' '),
+      initials = names[0].substring(0, 1).toUpperCase();
+
+    if (names.length > 1) {
+      initials += names[names.length - 1].substring(0, 1).toUpperCase();
+    }
+    return initials;
+  };
+
   return (
     <Container>
       <div style={{ width: '100%' }}>
@@ -17,8 +29,27 @@ const Clients = () => {
         <ReactElasticCarousel breakPoints={breakPoints}>
           {schema.map(item =>
             <Card key={item.id}>
-              <Image alt='iCore' style={{ minWidth: 115, borderRadius: 115, objectFit: 'cover' }} width={115} height={115} src={item.image} />
-              <p>{item.about}</p>
+              {
+                item.image ?
+                  <Image alt='iCore' draggable={false} style={{ minWidth: 80, borderRadius: 80, objectFit: 'cover' }} width={80} height={80} src={item.image} />
+                  :
+                  <div style={{
+                    borderRadius: 80,
+                    minWidth: 80,
+                    width: 80,
+                    height: 80,
+                    backgroundColor: '#7b1fa2',
+                    color: '#fff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: 24
+                  }}>{getAbreviation(item.name)}</div>
+              }
+
+
+              <p style={{ fontWeight: 'bold', margin: 0 }}>{item.name}</p>
+              <p style={{ margin: 0 }}>{item.about}</p>
             </Card>
           )}
         </ReactElasticCarousel>
