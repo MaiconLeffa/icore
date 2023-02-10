@@ -13,6 +13,7 @@ export const Container = styled.div`
   @media(max-width: ${themes.breakpoints.mobile}){
     height: unset;
     flex-direction: column-reverse;
+    background-position: center;
   }
 `
 export const Title = styled.h1`
